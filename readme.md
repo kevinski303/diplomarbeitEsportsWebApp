@@ -1,3 +1,20 @@
+## Installation
+#### First time installation
+1. Install composer from "https://getcomposer.org/"
+2. Prepare Database
+3. Add DB connection string to .env file
+4. Open terminal & cd into home directory
+5. Run "php artisan migrate --seed" to create Datatables
+6. Run "php artisan key:generate" to create a new application key
+
+#### Start Server
+1. Open terminal & cd into home directory
+3. Run 'php artisan serve'
+4. Browse localhost:8000 for Public page
+5. Browse localhost:8000/admin for admin panel (login: admin@admin.com // pw: password)
+
+---
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
