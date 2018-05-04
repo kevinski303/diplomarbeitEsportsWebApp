@@ -60,7 +60,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('pointsteam1', trans('quickadmin.game.fields.pointsteam1').'', ['class' => 'control-label']) !!}
+                    {!! Form::label('pointsteam1', trans('pointsteam1').'', ['class' => 'control-label']) !!}
                     {!! Form::number('pointsteam1', old('pointsteam1'), ['class' => 'form-control', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('pointsteam1'))
