@@ -20,8 +20,8 @@
                                 <td>{{$loop->iteration}}</td>
                                 <td>{{$team->name}}</td>
                                 <td>{{$team->won}}</td>
-                                <td>{{$team->lost}}</td>
                                 <td>{{$team->tied}}</td>
+                                <td>{{$team->lost}}</td>
                                 <td>{{$team->points}}</td>
                             </tr>
                         @empty
