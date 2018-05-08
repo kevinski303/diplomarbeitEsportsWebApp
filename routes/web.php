@@ -1,8 +1,10 @@
 <?php
-Route::get('/', function () { return redirect('/games');});
+Route::get('/', function () { return redirect('/public');});
+Route::get('/public', 'PublicController@index');
+Route::get('/table', 'TableController@index');
 Route::get('/games', 'GamesController@index');
 Route::get('/teams', 'TeamsController@index');
-Route::get('/table', 'TableController@index');
+
 
 #Route::get('/', function () { return redirect('/admin/home'); });
 
