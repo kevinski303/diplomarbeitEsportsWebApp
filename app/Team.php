@@ -23,16 +23,14 @@ class Team extends Model
     protected $hidden = [];
 
 
-    public function getGamesAttribute()
-    {
+    public function getGamesAttribute() {
         return Game::where(function($query) {
             $query->where('team1_id', $this->attributes['id'])->orWhere('team2_id', $this->attributes['id']);
         })
             ->whereNotNull('pointsteam1')
             ->count();
     }
-    public function getWonAttribute()
-    {
+    public function getWonAttribute() {
         return Game::whereNotNull('pointsteam1')
             ->where(function($query) {
                 $query->where(function($query2) {
@@ -43,8 +41,7 @@ class Team extends Model
             })
             ->count();
     }
-    public function getTiedAttribute()
-    {
+    public function getTiedAttribute() {
         return Game::whereNotNull('pointsteam1')
             ->whereRaw('pointsteam1 = pointsteam2')
             ->where(function($query) {
@@ -53,8 +50,7 @@ class Team extends Model
             })
             ->count();
     }
-    public function getLostAttribute()
-    {
+    public function getLostAttribute() {
         return Game::whereNotNull('pointsteam1')
             ->where(function($query) {
                 $query->where(function($query2) {
@@ -65,8 +61,7 @@ class Team extends Model
             })
             ->count();
     }
-    public function getPointsAttribute()
-    {
+    public function getPointsAttribute() {
         return $this->getWonAttribute() * 3 + $this->getTiedAttribute() * 1;
     }
 }

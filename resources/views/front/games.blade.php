@@ -14,7 +14,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="2">Keine Spiele</td>
+                            <td colspan="2">Keine zukünftigen Spiele</td>
                         </tr>
                     @endforelse
                 </table>
