@@ -10,9 +10,9 @@
                         <tr>
                             <td>Position</td>
                             <th>Team</th>
-                            <th>W</th>
-                            <th>T</th>
-                            <th>L</th>
+                            <th>S</th>
+                            <th>U</th>
+                            <th>N</th>
                             <th>Punkte</th>
                         </tr>
                         @forelse($teams as $team)
