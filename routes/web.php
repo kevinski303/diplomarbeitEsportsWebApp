@@ -4,6 +4,7 @@ Route::get('/public', 'PublicController@index');
 Route::get('/table', 'TableController@index');
 Route::get('/games', 'GamesController@index');
 Route::get('/teams', 'TeamsController@index');
+Route::get('/impressum', 'ImpressumController@index');
 
 
 #Route::get('/', function () { return redirect('/admin/home'); });

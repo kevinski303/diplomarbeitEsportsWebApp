@@ -12,7 +12,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/teams.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/customstyle.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -59,6 +60,16 @@
         </div>
     </nav>
     @yield('content')
+    <p style="visibility:hidden;">&nbsp</p>
+    <p style="visibility:hidden;">&nbsp</p>
+    <p style="visibility:hidden;">&nbsp</p>
+</div>
+<div>
+<footer class="page-footer navbar-default navbar-fixed-bottom" style="border-top-color:#d3e0e9; border-top-style: solid; border-top-width:1px">
+    <div class="container text-center text-muted text-uppercase">
+        <p style="margin-top: 1%"><a href="/impressum" class=" text-muted">Impressum</a></p>
+    </div>
+</footer>
 </div>
 
 <!-- Scripts -->

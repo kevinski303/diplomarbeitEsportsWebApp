@@ -3,5 +3,6 @@
     -webkit-flex-wrap: wrap; /* Safari 6.1+ */
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
     /*justify-content: center;*/
 }

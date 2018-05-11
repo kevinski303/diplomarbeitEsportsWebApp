@@ -7,10 +7,14 @@
                 <h1>Nächste Spiele</h1>
 
                 <table class="table">
+                    <tr>
+                        <td><strong>Begegnung</strong></td>
+                        <td><strong>Datum & Anspielzeit</strong></td>
+                    </tr>
                     @forelse($games as $game)
                         <tr>
-                            <td>{{ $game->beginn }}</td>
                             <td>{{ $game->team1->name }} - {{ $game->team2->name }}</td>
+                            <td>{{ $game->beginn }}</td>
                         </tr>
                     @empty
                         <tr>
@@ -24,16 +28,19 @@
                 <h1>Vergangene Spiele</h1>
 
                 <table class="table">
+                    <tr>
+                        <td><strong>Begegnung</strong></td>
+                        <td><strong>Endresultat</strong></td>
+                    </tr>
+                    <tr>
                     @forelse($results as $game)
-                        <tr>
-                            <td>{{ $game->beginn }}</td>
-                            <td>{{ $game->team1->name }} - {{ $game->team2->name }}</td>
-                            <td>{{ $game->pointsteam1 }} : {{ $game->pointsteam2 }}</td>
-                        </tr>
+                        <td>{{ $game->team1->name }} - {{ $game->team2->name }}</td>
+                        <td>{{ $game->pointsteam1 }} : {{ $game->pointsteam2 }}</td>
+                    </tr>
                     @empty
-                        <tr>
-                            <td colspan="3">No results.</td>
-                        </tr>
+                    <tr>
+                        <td colspan="3">No results.</td>
+                    </tr>
                     @endforelse
                 </table>
             </div>

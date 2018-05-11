@@ -3,15 +3,19 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>Teams</h1>
+            <div class="col-sm-12">
+                <h1 class="text-center">Teams</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
                 <div class="team-section">
                 @forelse($teams as $team)
-                <div style="width: 15em; text-align: center">
-                    <a href="{{$team->www}}">
-                        <img src="{{$team->logo}}" class="img-circle" width="150px">
+                <div class="col-md-3 text-center" style="margin-top: 15px">
+                    <a href="{{$team->twitterlink}}">
+                        <img src="{{$team->logo}}" class="img-circle" width="120px">
                         <div class="caption">
-                            <p>{{$team->name}}</p>
+                            <p class="text-bold text-muted">{{$team->name}}</p>
                         </div>
                     </a>
                 </div>
