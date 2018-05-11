@@ -1,4 +1,4 @@
-## Installation
+## Installation Development
 #### First time installation
 1. Install composer from "https://getcomposer.org/"
 2. Prepare Database
@@ -14,6 +14,66 @@
 5. Browse localhost:8000/admin for admin panel (login: admin@admin.com // pw: password)
 
 ---
+## Install and Release for Testing
+1. Prepare Ubuntu 16.04 Server via your favourite provider
+
+2. Install Apache2 
+    - 'apt-get install apache2'
+    - Check Apache Config 'nano /etc/apache2/apache2.conf'
+    - Add 'ServerName server_domain_or_IP'
+    - Restart Apache 'systemctl restart apache2'
+    - Allow Traffic on 80,443 'ufw allow in "Apache Full"'
+    - Browse your Webserver to test Configuration
+
+3. Install MariaDB:
+    - 'apt-get install mariadb-server'
+    - secure your installatoin 'mysql_secure_installation' follow instructions
+
+4. Install php and requred modules:
+    - 'apt-get install php libapache2-mod-php php-mcrypt php-mysql php-mbstring php-fpm'
+    - configure php.ini 'nano /etc/php/7.0/fpm/php.ini' add 'cgi.fix_pathinfo=0'
+    - restart php 'systemctl restart php7.0-fpm'
+    - set index.php to highest priority 'nano /etc/apache2/mods-enabled/dir.conf' put index.php to front
+    - restart apache 'systemctl restart apache2'
+    - check Apache status 'systemctl status apache2' there should be 6 services
+
+5. test php processing: 
+    - create info.php 'nano /var/www/html/info.php'
+    - add '<?php phpinfo(); ?>' to info.php
+    - browse 'http://[server_ip_or_domain]/info.php'
+
+6. Optional install PhpMyAdmin and add secondary authenticaton:
+    - 'apt-get install phpmyadmin php-mbstring php-gettext' -> answer yes at dbconfig
+    - 'nano /etc/apache2/conf-available/phpmyadmin.conf' -> Add "AllowOverride ALL" into <Directory /usr/share/phpmyadmin>
+    - restart apache2 'systemctl restart apache2'
+    - setup webfolder authentication:
+        - 'nano /usr/share/phpmyadmin/.htaccess' add the following parameters:
+            - AuthType Basic
+            - AuthName "Restricted Files"
+            - AuthUserFile /etc/phpmyadmin/.htpasswd
+            - Require valid-user
+        - create user for webfolder authentication:
+            - 'htpasswd -c /etc/phpmyadmin/.htpasswd <username>'
+    
+7. Create virtual application folder and point apache default to it:
+    - create application folder 'mkdir -p /var/www/esportsapp'
+    - edit default.conf 'nano /etc/apache2/sites-available/000-default.conf'
+        - change "DocumentRoot" to '/var/www/esportsapp/public'
+    - restart apache 'systemctl restart apache2'
+
+8. install composer gloablly:
+    - 'curl -sS https://getcomposer.org/installer | php'
+    - 'mv composer.phar /usr/local/bin/composer'
+    
+
+
+9. SSH and FTP into your server
+
+
+---
+##Laravel Info
+
+
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
