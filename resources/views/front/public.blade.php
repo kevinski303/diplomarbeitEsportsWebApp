@@ -16,8 +16,8 @@
             <div class="col-md-6">
                 <p class="lead">
                 Hallo Daniel, hallo Marcel, <br>
-                    Es feut mich dass ich euch heute eine Demonstration dieser Webapplikation als Version 0.1 vorstellen darf.<br><br>
-                    Mit hilfe dieser Lösung erhalten eSports Veranstalter und Organisatoren ein einfaches Werkzeug um Turniere und
+                    Es freut mich dass ich euch heute eine Demonstration dieser Webapplikation als initiale Version 0.1.0 vorstellen darf.<br><br>
+                    Mit Hilfe dieser Lösung erhalten eSports Veranstalter und Organisatoren ein einfaches Werkzeug um Turniere und
                     deren Spiele und Resultate zu verwalten und publik zu machen.<br>
                     <br>
                     Danke für eure Beteiligung als PDA Experten und viel Spass bei der Demo!<br>
