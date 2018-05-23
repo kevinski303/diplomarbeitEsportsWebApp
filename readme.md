@@ -14,7 +14,7 @@
 5. Browse localhost:8000/admin for admin panel (login: admin@admin.com // pw: password)
 
 ---
-## Install and Release for Testing
+## Install and release for testing
 1. Prepare Ubuntu 16.04 Server via your favourite provider
 
 2. Install Apache2 
