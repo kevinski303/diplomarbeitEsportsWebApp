@@ -6,3 +6,54 @@
     margin-top: 10px;
     /*justify-content: center;*/
 }
+
+.header-spg-logo {
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*-webkit-filter: invert(100%) grayscale(50%);
+    filter: invert(100%) grayscale(100%);*/
+}
+
+.navbar-default {
+    background-color: #3F3F3F;
+    border-color: #129ED1;
+    border-top-style: solid;
+    border-top-width: 5px;
+}
+
+.navbar-static-top {
+    border-width: 0px 0px 5px 0px;
+}
+
+body {
+}
+
+.buttonFront {
+    background-color: #3F3F3F;
+    border: none;
+    color: lightgrey;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.buttonFront:after {
+    content: "";
+    background: #129ED1;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s
+}
+
+.buttonFront:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}

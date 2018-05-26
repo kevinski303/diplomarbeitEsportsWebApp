@@ -37,22 +37,24 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <!--<a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
+                </a>-->
+                <a href="{{ url('/') }}">
+                    <img src="/images/Logo7.png" class="header-spg-logo">
                 </a>
             </div>
-
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/games">Spiele</a>
+                        <a href="/games" style="color: lightgrey"><button class="buttonFront">Spiele</button></a>
                     </li>
                     <li>
-                        <a href="/table">Tabelle</a>
+                        <a href="/table" style="color: lightgrey"><button class="buttonFront">Tabelle</button></a>
                     </li>
                     <li>
-                        <a href="/teams">Teams</a>
+                        <a href="/teams" style="color: lightgrey"><button class="buttonFront">Teams</button></a>
                     </li>
                 </ul>
 
@@ -65,9 +67,13 @@
     <p style="visibility:hidden;">&nbsp</p>
 </div>
 <div>
-<footer class="page-footer navbar-default navbar-fixed-bottom" style="border-top-color:#d3e0e9; border-top-style: solid; border-top-width:1px">
-    <div class="container text-center text-muted text-uppercase">
-        <p style="margin-top: 1%"><a href="/impressum" class=" text-muted">Impressum</a></p>
+<footer class="page-footer navbar-default navbar-fixed-bottom" style="">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6 text-uppercase">
+        <p style="margin-top: 1%;"><a href="/impressum" class="text" style="color: darkgray;">Impressum & Kontakt </a></p>
+    </div>
+    </div>
     </div>
 </footer>
 </div>

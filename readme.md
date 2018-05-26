@@ -1,11 +1,13 @@
 ## Installation Development
 #### First time installation
+- Prerequirements: Database System, PHP Version > 7.00
 1. Install composer from "https://getcomposer.org/"
 2. Prepare Database
 3. Add DB connection string to .env file
 4. Open terminal & cd into home directory
-5. Run "php artisan migrate --seed" to create Datatables
-6. Run "php artisan key:generate" to create a new application key
+5. Run "composer install"
+6. Run "php artisan migrate --seed" to create Datatables
+7. Run "php artisan key:generate" to create a new application key
 
 #### Start Server
 1. Open terminal & cd into home directory

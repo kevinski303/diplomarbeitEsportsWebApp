@@ -10,9 +10,11 @@
                     <p>Spiegelstrasse 74<br>
                         3095 Spiegel b. Bern<br>
                         Schweiz</p>
-                    <p class="text-muted"><a href="mailto:Kevin.Staeger@outlook.com" class="text-muted"><i class="material-icons" style="font-size: 15px">email</i> kevin.staeger@outlook.com</a>
+                    <p class="text-muted">
+                        <a href="mailto:Kevin.Staeger@outlook.com" class="text-muted"><i class="material-icons" style="font-size: 15px">email</i> kevin.staeger@outlook.com</a><br>
                         <a href="https://twitter.com/kevinski303" class="text-muted"><i class="material-icons" style="font-size: 15px">message</i> twitter.com/kevinski303</a><br>
-                        <a href="https://github.com/kevinski303" class="text-muted"><i class="material-icons" style="font-size: 15px">code</i> github.com/kevinski303</a></p>
+                        <a href="https://github.com/kevinski303" class="text-muted"><i class="material-icons" style="font-size: 15px">code</i> github.com/kevinski303</a>
+                    </p>
                     <p>&nbsp;</p>
                     <h2>Haftungsausschluss</h2>
                     <p>Der Autor übernimmt keinerlei Gewähr hinsichtlich der  inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und  Vollständigkeit der Informationen.</p>

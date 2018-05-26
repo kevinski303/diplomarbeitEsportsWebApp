@@ -4,23 +4,20 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h1>Wilkommen zum eSports Demo Turnier</h1>
+                <h1>Willkommen zum Demo Turnier</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <h2>Yuhu!!!</h2>
+                <h2><div class="text-uppercase"> <p style="align:right; color: #129ED1;">⚠ Demo Umgebung ⚠</p> </div></h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <p class="lead">
-                Hallo Daniel, hallo Marcel, <br>
-                    Es freut mich dass ich euch heute eine Demonstration dieser Webapplikation als initiale Version 0.1.0 vorstellen darf.<br><br>
-                    Mit Hilfe dieser Lösung erhalten eSports Veranstalter und Organisatoren ein einfaches Werkzeug um Turniere und
-                    deren Spiele und Resultate zu verwalten und publik zu machen.<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ullamcorper nisl, at fringilla magna. Praesent eget tristique odio. Integer laoreet nunc a faucibus porta. Aenean at ipsum nunc. Pellentesque sed lacinia leo. Etiam id dictum dolor, congue iaculis arcu. Aenean aliquet laoreet ex.<br>
                     <br>
-                    Danke für eure Beteiligung als PDA Experten und viel Spass bei der Demo!<br>
+                    Duis rhoncus erat vitae metus consequat, sed varius quam convallis. Sed risus diam, eleifend a laoreet eu, malesuada in elit. Mauris in velit elementum, mattis diam quis, finibus lacus. Donec in accumsan magna. Suspendisse libero massa, facilisis sed congue ut, malesuada vitae<br>
                 </p>
             </div>
             <div class="col-md-5">
