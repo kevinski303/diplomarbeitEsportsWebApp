@@ -1,4 +1,7 @@
 # Simple eSports league management app (selmapp)
+
+[wiki](https://github.com/kevinski303/selmapp/wiki)
+
 ## Installation Development
 #### First time installation
 - Prerequirements: Database System, PHP Version > 7.00
@@ -74,7 +77,8 @@
 
 
 ---
-##Laravel Info
+
+## Laravel Info
 
 
 
