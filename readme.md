@@ -1,6 +1,6 @@
 # Simple eSports league management app (selmapp)
 
-[wiki](https://github.com/kevinski303/selmapp/wiki)
+[wiki](https://github.com/kevinski303/selmapp/wiki) - german
 
 ## Installation Development
 #### First time installation
